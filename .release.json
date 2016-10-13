@@ -22,5 +22,10 @@
   },
   "npm": {
     "publish": false
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Release v%s",
+    "tokenRef": "f29cf65216596fefc1b8b0fcb01c657e5a80ef93"
   }
 }
