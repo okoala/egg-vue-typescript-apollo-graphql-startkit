@@ -27,4 +27,8 @@ npm i -g yarn
 
 // development
 yarn && npm run dev
+
+// login
+name: okoala
+pwd:  123456
 ```
