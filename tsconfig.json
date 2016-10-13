@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./src/definitions/",
+      "./node_modules/@types/",
+      "./node_modules/vue/types/",
+      "./node_modules/graphql-typings/"
+    ],
+    "types": [
+      "node",
+      "vue",
+      "jquery"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

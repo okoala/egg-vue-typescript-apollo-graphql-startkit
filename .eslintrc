@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": ["vue"],
+  "globals": {
+    "gql": true,
+    "$": true
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "linebreak-style": 0
+  }
+}

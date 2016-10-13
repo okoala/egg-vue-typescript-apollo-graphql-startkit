@@ -1,0 +1,22 @@
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - yum update
+  - yum install -y bzip2
+  - yum install -y freetype
+  - yum install -y fontconfig
+  - '[ ! -d $HOME/.nvm ] && git clone http://gitlab.alibaba-inc.com/node/nvm.git $HOME/.nvm'
+  - cd $HOME/.nvm && git pull -p && cd -
+  - source $HOME/.nvm/nvm.sh
+  - nvm i 6.6.0 && nvm alias default 6
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+
+stages:
+  - test
+
+test_all:
+  stage: test
+  script:
+    - tnpm run test:unit:vue

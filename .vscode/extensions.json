@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    "alefragnani.project-manager",
+    "spywhere.guides",
+    "2gua.rainbow-brackets",
+    "eg2.tslint",
+    "dbaeumer.vscode-eslint",
+    "dbaeumer.vscode-eslint",
+    "naumovs.node-modules-resolve",
+    "EditorConfig.EditorConfig",
+    "dzannotti.vscode-babel-coloring",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "msjsdiag.debugger-for-chrome",
+    "Compulim.vscode-ipaddress",
+    "joelday.docthis",
+    "liuji-jim.vue",
+    "mquandalle.graphql",
+    "naumovs.color-highlight",
+    "pflannery.vscode-versionlens",
+    "robertohuertasm.vscode-icons",
+    "RoscoP.ActiveFileInStatusBar",
+    "Shan.code-settings-sync",
+    "steve8708.Align",
+    "vilicvane.es-quotes",
+    "wmaurer.change-case",
+    "xabikos.JavaScriptSnippets",
+    "bernardodsanderson.theme-material-neutral",
+    "abusaidm.html-snippets",
+    "kisstkondoros.csstriggers"
+  ]
+
+}

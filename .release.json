@@ -1,0 +1,26 @@
+{
+  "non-interactive": false,
+  "dry-run": false,
+  "verbose": false,
+  "force": false,
+  "pkgFiles": [
+    "package.json"
+  ],
+  "increment": "patch",
+  "prereleaseId": null,
+  "commitMessage": "Release v%s",
+  "tagName": "v%s",
+  "tagAnnotation": "Release v%s",
+  "buildCommand": false,
+  "changelogCommand": "git log --pretty=format:'* %s (%h)' v[REV_RANGE]",
+  "requireCleanWorkingDir": false,
+  "src": {
+    "pushRepo": null,
+    "beforeStartCommand": false,
+    "beforeStageCommand": false,
+    "afterReleaseCommand": false
+  },
+  "npm": {
+    "publish": false
+  }
+}
