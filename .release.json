@@ -8,11 +8,11 @@
   ],
   "increment": "patch",
   "prereleaseId": null,
-  "commitMessage": "Release v%s",
-  "tagName": "v%s",
-  "tagAnnotation": "Release v%s",
+  "commitMessage": "Release %s",
+  "tagName": "%s",
+  "tagAnnotation": "Release %s",
   "buildCommand": false,
-  "changelogCommand": "git log --pretty=format:'* %s (%h)' v[REV_RANGE]",
+  "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
   "requireCleanWorkingDir": false,
   "src": {
     "pushRepo": null,
@@ -25,7 +25,7 @@
   },
   "github": {
     "release": true,
-    "releaseName": "Release v%s",
+    "releaseName": "Release %s",
     "tokenRef": "f29cf65216596fefc1b8b0fcb01c657e5a80ef93"
   }
 }
