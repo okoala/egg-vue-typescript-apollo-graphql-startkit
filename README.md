@@ -26,8 +26,8 @@
 ```
 // preinstall
 npm i -g yarn
-npm i release-it -g
-npm i nodemon -g
+npm i -g release-it
+npm i -g nodemon
 
 // development
 yarn && npm run dev
