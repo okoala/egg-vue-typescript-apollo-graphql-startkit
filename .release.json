@@ -26,6 +26,6 @@
   "github": {
     "release": true,
     "releaseName": "Release %s",
-    "tokenRef": "f29cf65216596fefc1b8b0fcb01c657e5a80ef93"
+    "tokenRef": "GITHUB_TOKEN"
   }
 }
