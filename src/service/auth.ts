@@ -28,8 +28,7 @@ export function getToken () {
 export function logout () {
   return new Promise((resolve, reject) => {
     delete localStorage['token']
-    if (resolve) resolve(true)
-    this.onChange(false)
+    resolve(true)
   })
 }
 
