@@ -21,6 +21,7 @@ export default {
   beforeMount () {
     this.$store.dispatch('GET_USER', this.form)
       .catch(err => {
+        console.error(err)
         this.$message({
           message: err,
           type: 'error'

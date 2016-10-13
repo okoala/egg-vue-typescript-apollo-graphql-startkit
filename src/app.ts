@@ -28,8 +28,11 @@ Vue.use(() => {
 import apollo from './store/apollo'
 apollo.init()
 
-import filters from './filters'
-Vue.use(filters)
+import { toUpperCase, toLowerCase } from './service/util'
+import { dateFormat } from './service/date'
+Vue.filter('toUpperCase', toUpperCase)
+Vue.filter('toLowerCase', toLowerCase)
+Vue.filter('dateFormat', dateFormat)
 
 // Vue相关：路由，store
 import store from './store'

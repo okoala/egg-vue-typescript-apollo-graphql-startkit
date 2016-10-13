@@ -2,7 +2,7 @@ import * as Vue from 'vue'
 import gql from 'graphql-tag'
 
 import { trackLog } from '../service/util'
-import auth from '../service/auth'
+import { getToken, logout } from '../service/auth'
 
 // apollo的声明文件各种报错，用require引入
 const ApolloClient = require('apollo-client')
@@ -29,7 +29,7 @@ export default {
           if (!req.options.headers) {
             req.options.headers = {}
           }
-          req.options.headers.Authorization = 'Bearer ' + auth.getToken()
+          req.options.headers.Authorization = 'Bearer ' + getToken()
           next()
         }
       }
@@ -40,7 +40,7 @@ export default {
         // 如果没有登录，则跳转到登录界面，如果成功之后就再跳转回来。
         applyAfterware({ response }, next) {
           if (response.status === 401) {
-            auth.logout()
+            logout()
               .then(res => {
                 document.location.href = '/login' + '?redirect=' + encodeURIComponent(document.location.href)
               })

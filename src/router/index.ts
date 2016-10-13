@@ -1,5 +1,5 @@
 import * as Vue from 'vue'
-import auth from '../service/auth'
+import { loggedIn, logout } from '../service/auth'
 
 const Router = require('vue-router')
 
@@ -10,7 +10,7 @@ const Home = require('../views/Home.vue')
 Vue.use(Router)
 
 function requireAuth (to, from, next) {
-  if (!auth.loggedIn()) {
+  if (!loggedIn()) {
     next({
       path: 'login',
       query: { redirect: to.fullPath }
@@ -28,7 +28,7 @@ export default new Router({
         { path: 'login', component: Login, meta: { standalone: true }},
         { path: 'logout',
           beforeEnter (to, from, next) {
-            auth.logout()
+            logout()
             next('/login')
           }
         },

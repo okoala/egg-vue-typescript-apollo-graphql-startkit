@@ -15,3 +15,13 @@ export function trackLog (name: String, msg?: String) {
     console.log(msg)
   }
 }
+
+export function toUpperCase (str: String): String {
+  if (typeof str !== 'string') return str
+  return str.toUpperCase()
+}
+
+export function toLowerCase (str: String): String {
+  if (typeof str !== 'string') return str
+  return str.toLowerCase()
+}

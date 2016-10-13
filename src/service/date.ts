@@ -9,7 +9,7 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
 ]
 
-export default function (date, formatString) {
+export function dateFormat (date, formatString) {
   var d = new Date(date)
 
   var zeroize = function (value, length = 2) {
