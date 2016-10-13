@@ -12,6 +12,8 @@
 - other stack
 
   - [Yarn](https://github.com/yarnpkg/yarn) - Fast, reliable, and secure dependency management.
+  - [Vuex](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
+  - [VueRouter](https://github.com/vuejs/vue-router) - It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.
   - [Element](https://github.com/ElemeFE/element) - Desktop UI elements for Vue.js 2.0
   - [JSON Web Tokens](https://jwt.io/) - Industry standard RFC 7519 method for representing claims securely between two parties.
   - [Webpack](https://github.com/webpack/webpack) - A bundler for javascript and friends. Packs many modules into a few bundled assets.
