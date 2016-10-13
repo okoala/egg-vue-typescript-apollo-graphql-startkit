@@ -18,7 +18,7 @@
   - [JSON Web Tokens](https://jwt.io/) - Industry standard RFC 7519 method for representing claims securely between two parties.
   - [Webpack](https://github.com/webpack/webpack) - A bundler for javascript and friends. Packs many modules into a few bundled assets.
   - [Babel](https://github.com/babel/babel) - Babel is a compiler for writing next generation JavaScript.
-  - [Release It!]() - Interactive release tool for Git repos. Bump version, commit, tag, push, build, publish to npm.
+  - [Release It!](https://github.com/webpro/release-it) - Interactive release tool for Git repos. Bump version, commit, tag, push, build, publish to npm.
   - [Karma](https://github.com/karma-runner/karma) - Spectacular Test Runner for JavaScript.
 
 ## Usage
