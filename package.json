@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "start": "node index.js",
-    "dev": "npm-run-all --parallel dev:serve dev:client",
+    "dev": "npm-run-all --parallel dev:server dev:client",
     "dev:server": "cross-env NODE_ENV=development nodemon --debug --watch app --watch conf --watch config index.js",
     "dev:client": "cross-env NODE_ENV=development webpack-dev-server --progress --config ./build/webpack.client.config.js",
     "build": "npm run build:client && npm run build:server",
