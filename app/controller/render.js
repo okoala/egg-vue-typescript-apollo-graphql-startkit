@@ -1,7 +1,7 @@
 const safeStringify = require('fast-safe-stringify')
 const packageConf = require('../../package.json')
 
-let assets = process.env.UAE_MODE
+let assets = process.env.NODE_ENV !== 'development'
   ? require('../../dist/assets.json')
   : { app: { js: '/dist/app-bundle.js' }, vendor: { js: '/dist/vendor-bundle.js', css: '/dist/style.css' }}
 
