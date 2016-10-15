@@ -42,3 +42,7 @@ npm run dev
 name: okoala
 pwd:  123456
 ```
+
+## Plan
+
+  - [1.0 Plan](https://github.com/okoala/egg-vue-typescript-apollo-graphql-startkit/projects/1)
