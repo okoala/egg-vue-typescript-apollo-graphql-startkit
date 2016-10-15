@@ -29,8 +29,14 @@ npm i -g yarn
 npm i -g release-it
 npm i -g nodemon
 
+// location in china
+yarn config set registry http://r.cnpmjs.org
+
+// install dependencies
+yarn
+
 // development
-yarn && npm run dev
+npm run dev
 
 // login
 name: okoala
