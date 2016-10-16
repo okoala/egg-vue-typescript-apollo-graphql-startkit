@@ -86,6 +86,11 @@ if (process.env.NODE_ENV === 'development') {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
     new ExtractTextPlugin('styles-[contenthash].css'),
+    // extract vendor chunks for better caching
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: '[name]-bundle-[hash].js'
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
