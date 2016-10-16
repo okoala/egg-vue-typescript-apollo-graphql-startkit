@@ -24,23 +24,29 @@
 ## Usage
 
 ```
-// preinstall
-npm i -g yarn
-npm i -g release-it
-npm i -g nodemon
+step1 (preinstall):
+  npm i -g yarn
+  npm i -g release-it
+  npm i -g nodemon
 
-// location in china
-yarn config set registry http://r.cnpmjs.org
+in china use taobao registry
+  npm i -g yarn --registry=https://registry.npm.taobao.org
+  npm i -g release-it --registry=https://registry.npm.taobao.org
+  npm i -g nodemon --registry=https://registry.npm.taobao.org
+  yarn config set registry https://registry.npm.taobao.org
 
-// install dependencies
-yarn
 
-// development
-npm run dev
+step2 (dependencies):
+  yarn
 
-// login
-name: okoala
-pwd:  123456
+
+step3 (development):
+  npm run dev
+
+
+step4 (login):
+  name: okoala
+  pwd:  123456
 ```
 
 ## Plan
