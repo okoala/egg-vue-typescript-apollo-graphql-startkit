@@ -73,6 +73,7 @@ if (process.env.NODE_ENV === 'development') {
   }, 2000)
 } else {
   const AssetsPlugin = require('assets-webpack-plugin')
+  const PrerenderSpaPlugin = require('prerender-spa-plugin')
 
   config.vue.loaders = {
     less: ExtractTextPlugin.extract('css!less')
@@ -96,6 +97,18 @@ if (process.env.NODE_ENV === 'development') {
         warnings: false
       }
     }),
+    new PrerenderSpaPlugin(
+      path.join(__dirname, '..', 'dist'),
+      ['/login'],
+      {
+        captureAfterTime: 5000,
+        maxAttempts: 10,
+        phantomOptions: '--disk-cache=true',
+        phantomPageSettings: {
+          loadImages: true
+        }
+      }
+    ),
     new AssetsPlugin({
       filename: 'assets.json',
       path: path.join(__dirname, '../dist')
