@@ -1,5 +1,3 @@
-> This entry is for introductory learning about the following stacks and is not recommended for direct production
-
 ## Technology Stack
 
 - main stack
