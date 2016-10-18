@@ -92,6 +92,7 @@ if (process.env.NODE_ENV === 'development') {
       name: 'vendor',
       filename: '[name]-bundle-[hash].js'
     }),
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
