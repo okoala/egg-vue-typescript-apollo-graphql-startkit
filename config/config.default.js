@@ -5,6 +5,8 @@ const deepmerge = require('deepmerge')
 module.exports = appInfo => {
   const exports = {}
 
+  exports.keys = 'awesome'
+
   exports.projectKey = 'CP_GOOD_PROJECT'
 
   exports.development = {

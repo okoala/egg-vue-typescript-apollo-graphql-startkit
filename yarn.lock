@@ -4614,7 +4614,7 @@ lodash.deburr@^3.0.0:
   dependencies:
     lodash._root "^3.0.0"
 
-lodash.defaultsdeep@^4.3.2:
+lodash.defaultsdeep@^4.3.2, lodash.defaultsdeep@^4.6.0:
   version "4.6.0"
   resolved "http://r.cnpmjs.org/lodash.defaultsdeep/download/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
 
@@ -7632,6 +7632,14 @@ webpack-dev-server@^1.16.2:
 webpack-node-externals@^1.5.4:
   version "1.5.4"
   resolved "http://r.cnpmjs.org/webpack-node-externals/download/webpack-node-externals-1.5.4.tgz#ea05ba17108a23e776c35c42e7bb0e86c225be00"
+
+webpack-prerender-spa-plugin:
+  version "0.1.1"
+  resolved "http://registry.npm.taobao.org/webpack-prerender-spa-plugin/download/webpack-prerender-spa-plugin-0.1.1.tgz#b81693eb303042225bcad82426e7941ba79f2862"
+  dependencies:
+    lodash.defaultsdeep "^4.6.0"
+    mkdirp "0.5.1"
+    phantomjs-prebuilt "2.1.7"
 
 webpack-sources@^0.1.0:
   version "0.1.2"
