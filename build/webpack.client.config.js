@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'development') {
     `webpack-dev-server/client?http://127.0.0.1:${projectConfig.webpackDevPort}`,
     config.entry.app
   ]
-  config.output.publicPath = `http://127.0.0.1:${projectConfig.webpackDevPort}/dist/`
+  config.output.publicPath = `http://127.0.0.1:${projectConfig.webpackDevPort}/static/`
   config.devServer = {
     publicPath: config.output.publicPath,
     hot: true,
@@ -117,7 +117,7 @@ if (process.env.NODE_ENV === 'development') {
     }),
     new AssetsPlugin({
       filename: 'assets.json',
-      path: resolve('../dist')
+      path: resolve('../dist/static')
     })
   )
 }

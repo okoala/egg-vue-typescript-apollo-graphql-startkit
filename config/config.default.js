@@ -20,7 +20,7 @@ module.exports = appInfo => {
 
   // 静态目录配置
   exports.static = {
-    prefix: '/dist',
+    prefix: '/',
     dir: path.join(appInfo.baseDir, 'dist/')
   }
 

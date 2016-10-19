@@ -15,8 +15,8 @@ module.exports = {
     vendor: ['vue', 'vue-router', 'vuex', 'apollo-client', 'es6-promise']
   },
   output: {
-    path: resolve('../dist'),
-    publicPath: '/dist/',
+    path: resolve('../dist/static'),
+    publicPath: '/static/',
     filename: '[name]-bundle.js'
   },
   resolve: {
