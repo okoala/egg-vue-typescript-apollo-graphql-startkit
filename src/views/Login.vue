@@ -133,7 +133,11 @@ export default {
   text-align: center;
 
   .el-button-primary {
-    width: 194px;
+    width: 185px;
+  }
+
+  .btn-reset {
+    width: 69px;
   }
 }
 </style>
