@@ -2,8 +2,8 @@ const safeStringify = require('fast-safe-stringify')
 const packageConf = require('../../package.json')
 
 let assets = process.env.NODE_ENV !== 'development'
-  ? require('../../dist/assets.json')
-  : { app: { js: '/dist/app-bundle.js' }, vendor: { js: '/dist/vendor-bundle.js', css: '/dist/style.css' }}
+  ? require('../../dist/static/assets.json')
+  : { app: { js: '/static/app-bundle.js' }, vendor: { js: '/static/vendor-bundle.js', css: '/static/style.css' }}
 
 
 /**

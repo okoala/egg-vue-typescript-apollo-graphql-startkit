@@ -4,6 +4,8 @@ module.exports = {
   'profile_user_select': 'Please select user',
   'profile_pwd': 'Password',
   'profile_pwd_placeholder': 'Please input your password',
+  'profile_newpwd': 'New Password',
+  'profile_newpwd_placeholder': 'Please input your new password',
   'login': 'Sign In',
   'signup': 'Sign Up',
   'logout': 'Sign Out',

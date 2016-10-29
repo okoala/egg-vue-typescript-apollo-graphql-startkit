@@ -5,6 +5,8 @@ const deepmerge = require('deepmerge')
 module.exports = appInfo => {
   const exports = {}
 
+  exports.keys = 'awesome'
+
   exports.projectKey = 'CP_GOOD_PROJECT'
 
   exports.development = {
@@ -18,7 +20,7 @@ module.exports = appInfo => {
 
   // 静态目录配置
   exports.static = {
-    prefix: '/dist',
+    prefix: '/',
     dir: path.join(appInfo.baseDir, 'dist/')
   }
 
