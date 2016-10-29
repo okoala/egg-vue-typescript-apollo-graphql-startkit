@@ -1,6 +1,6 @@
 {
   "name": "egg-vue-typescript-apollo-graphql-startkit",
-  "version": "0.2.4",
+  "version": "1.0.0",
   "files": [
     "dist",
     "app",
