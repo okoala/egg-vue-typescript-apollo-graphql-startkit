@@ -28,5 +28,5 @@ module.exports = {
   'or': '或',
   'submit': '确定',
   'reset': '重置',
-  'cancel': '取消',
+  'cancel': '取消'
 }

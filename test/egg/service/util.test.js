@@ -33,7 +33,7 @@ describe('test/app/service/util.test.js', () => {
   })
 
   it('should gettext use default', function () {
-    assert(ctx.gettext('error_not_exist_%s', '用户') === '没有此用户!')
+    assert(ctx.gettext('error_not_exist_%s', '用户') === '用户不存在!')
   })
 
   it('checkMD5 if argument length less than 2 should return false', function () {
@@ -92,7 +92,7 @@ describe('test/app/service/util.test.js', () => {
   it('status defaultName should work', function () {
     const ret = ctx.service.util.status('user_not_exist')
     assert(ret.code === 1001)
-    assert(ret.msg === '没有此用户名!')
+    assert(ret.msg === '用户名不存在!')
   })
 
   it('status should support array msg', function () {
