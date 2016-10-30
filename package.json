@@ -39,6 +39,7 @@
     "egg": "^0.2.1",
     "egg-jwt": "^1.1.0",
     "egg-knex": "^1.0.1",
+    "egg-multiple-static": "^0.2.1",
     "egg-view-nunjucks": "^0.5.0",
     "element-ui": "1.0.0-rc.7",
     "es6-promise": "^4.0.5",

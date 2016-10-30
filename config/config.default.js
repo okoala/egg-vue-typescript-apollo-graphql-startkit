@@ -15,14 +15,17 @@ module.exports = appInfo => {
 
   // favicon.ico
   exports.siteFile = {
-    '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/favicon.ico'))
+    '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.ico'))
   }
 
   // 静态目录配置
-  exports.static = {
+  exports.multipleStatic = [{
     prefix: '/',
     dir: path.join(appInfo.baseDir, 'dist/')
-  }
+  }, {
+    prefix: '/',
+    dir: path.join(appInfo.baseDir, 'app/public')
+  }]
 
   // 安全控制
   exports.security = {

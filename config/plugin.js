@@ -1,4 +1,4 @@
-exports.static = true
+exports.static = false
 exports.logrotator = true
 exports.i18n = true
 exports.development = false
@@ -16,4 +16,8 @@ exports.mysql = {
 exports.jwt = {
   enable: true,
   package: 'egg-jwt'
+}
+exports.multipleStatic = {
+  enable: true,
+  package: 'egg-multiple-static'
 }
