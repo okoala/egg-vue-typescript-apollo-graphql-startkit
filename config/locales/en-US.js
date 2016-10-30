@@ -10,6 +10,7 @@ module.exports = {
   'signup': 'Sign Up',
   'logout': 'Sign Out',
   'server': 'Server',
+  'home': 'Home',
   'del': 'Del',
   'change_pwd': 'Change Pwd',
   'add_user': 'Add User',

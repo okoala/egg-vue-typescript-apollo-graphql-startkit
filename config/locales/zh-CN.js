@@ -10,6 +10,7 @@ module.exports = {
   'signup': '注册',
   'logout': '登出',
   'server': '服务器',
+  'home': '首页',
   'del': '删除',
   'change_pwd': '修改密码',
   'add_user': '添加用户',

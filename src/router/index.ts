@@ -1,5 +1,6 @@
 import * as Vue from 'vue'
 import { loggedIn, logout } from '../service/auth'
+import { __ } from '../service/locale'
 
 const Router = require('vue-router')
 
@@ -20,12 +21,12 @@ function requireAuth (to, from, next) {
   }
 }
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
     { path: '/', component: Index,
       children: [
-        { path: 'login', component: Login, meta: { standalone: true }},
+        { path: 'login', component: Login, meta: { standalone: true, title: __('login') }},
         { path: 'logout',
           beforeEnter (to, from, next) {
             logout()
@@ -33,10 +34,19 @@ export default new Router({
           }
         },
         {
-          path: 'home', component: Home, beforeEnter: requireAuth
+          path: 'home', component: Home, beforeEnter: requireAuth, meta: { title: __('home') }
         },
         { path: '', redirect: 'home' }
       ]
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
+})
+
+export default router
