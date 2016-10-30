@@ -6,7 +6,8 @@ export function formatWithArray (text, values) {
   return text.replace(ARRAY_INDEX_RE, function (orignal, matched) {
     const index = parseInt(matched)
     if (index < values.length) {
-      return values[index]
+      const value = values[index]
+      return getLocaleText(value)
     }
     // not match index, return orignal text
     return orignal
@@ -18,7 +19,7 @@ export function formatWithObject (text, values) {
   return text.replace(OBJECT_INDEX_RE, function (orignal, matched) {
     const value = values[matched]
     if (value) {
-      return value
+      return getLocaleText(value)
     }
     // not match index, return orignal text
     return orignal
@@ -57,6 +58,7 @@ export function getLocaleText (key, value?) {
       return formatWithArray(text, value)
     }
 
+    value = getLocaleText(value)
     // __(key, value)
     return util.format(text, value)
   }
