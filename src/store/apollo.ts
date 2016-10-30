@@ -29,6 +29,7 @@ export default {
           if (!req.options.headers) {
             req.options.headers = {}
           }
+          req.options.headers.Accept = 'application/json'
           req.options.headers.Authorization = 'Bearer ' + getToken()
           next()
         }
