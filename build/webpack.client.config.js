@@ -14,6 +14,7 @@ const config = Object.assign({}, base, {
 
 if (process.env.NODE_ENV === 'development') {
   const open = require('open')
+  const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   // setup on the fly compilation + hot-reload
   config.devtool = 'eval'
   config.entry.app = [
@@ -61,6 +62,7 @@ if (process.env.NODE_ENV === 'development') {
       // Install missing peerDependencies
       peerDependencies: true
     }),
+    new BundleAnalyzerPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
