@@ -1,12 +1,14 @@
 import * as Vue from 'vue'
 import { __ } from './service/locale'
 
-require('element-ui/lib/theme-default/index.css')
 require('semantic-ui-icon/icon.css')
 
 /** 组件相关 */
-import * as Element from 'element-ui'
-Vue.use(Element)
+import { Form, FormItem, Input, Button } from 'element-ui'
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Button)
 
 /** 把所有的组件都初始化，挂在在全局上 */
 import Components from './components'
