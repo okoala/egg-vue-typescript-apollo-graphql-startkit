@@ -9,14 +9,17 @@ exports.view = {
   enable: true,
   package: 'egg-view-nunjucks'
 }
+
 exports.mysql = {
   enable: false,
   package: 'egg-knex'
 }
+
 exports.jwt = {
   enable: true,
   package: 'egg-jwt'
 }
+
 exports.multipleStatic = {
   enable: true,
   package: 'egg-multiple-static'
