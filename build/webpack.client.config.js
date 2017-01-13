@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const NpmInstallPlugin = require('npm-install-webpack-plugin')
 const base = require('./webpack.base.config')
-const projectConfig = require('../conf/config.json')
+const projectConfig = require('../config/config.default')
 const resolve = file => path.resolve(__dirname, file)
 
 // extract CSS into a single file so it's applied on initial render

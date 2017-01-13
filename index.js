@@ -1,9 +1,7 @@
-process.env.VUE_ENV = 'server'
-const os = require('os')
-const config = require('./conf/config.json')
+const config = require('./config/config.default')
 
 require('egg').startCluster({
   baseDir: __dirname,
   port: config.port,
-  workers: process.env.NODE_ENV === 'development' ? 1 : os.cpus().length
+  workers: process.env.PORT || config.workers
 })
