@@ -17,6 +17,7 @@
       </el-form>
     </div>
   </div>
+  <bokeh class="bokeh"></bokeh>
 </div>
 </template>
 
@@ -81,7 +82,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 @import '../assets/variables.less';
 
 .login {
@@ -96,6 +97,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .el-form-item {
@@ -121,6 +123,8 @@ export default {
 
   .title {
     text-align: center;
+    font-size: 30px;
+    font-weight: normal;
   }
 }
 
@@ -139,5 +143,12 @@ export default {
   .btn-reset {
     width: 69px;
   }
+}
+
+.bokeh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 </style>

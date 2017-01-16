@@ -25,3 +25,11 @@ export function toLowerCase (str: String): String {
   if (typeof str !== 'string') return str
   return str.toLowerCase()
 }
+
+export function rand( min, max ) {
+  return Math.random() * ( max - min ) + min
+}
+
+export function hsla( h, s, l, a ) {
+  return 'hsla(' + h + ',' + s + '%,' + l + '%,' + a + ')'
+}
