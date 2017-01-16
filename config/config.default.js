@@ -9,7 +9,7 @@ exports.projectKey = 'CP_GOOD_PROJECT'
 exports.port = 7000
 exports.webpackDevPort = 8080
 exports.useSSR = false
-exports.workers = os.cpus().length
+exports.workers = 2
 
 exports.development = {
   watchDirs: ['app', 'config', 'conf', 'index.js']

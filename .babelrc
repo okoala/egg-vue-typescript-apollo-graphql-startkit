@@ -1,19 +1,10 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "chrome": 52,
-        "browsers": "last 2 safari versions"
-      },
-      "loose": true,
-      "modules": false
-    }]
+    "es2015",
+    "stage-2"
   ],
   "plugins": [
     "add-module-exports",
-    "transform-object-rest-spread",
-    "transform-es2015-destructuring",
-    "transform-es2015-parameters",
     ["component", [
       {
         "libraryName": "element-ui",
